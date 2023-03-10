@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-color: #121268;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form {
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  /* background-color: #010130; */
+  /* padding: 0 20px; */
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 40px;
+}
+
+#input-container {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  font-size: 22px;
+  overflow: hidden;
+}
+
+#btn {
+  width: 80px;
+  height: 100%;
+  background-color: #010130;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #121268;
+}
+
+#btn:active {
+  /* background-color: green; */
+  transform: translateY(8px);
+}
+
+.task-container {
+  width: 100%;
+  height: 70px;
+  background-color: #010130;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.new-task {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: cursive;
+  color: #ccc;
+  background: transparent;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  text-align: left;
+  cursor: auto;
+}
+
+.task-container .fa-square-check {
+  margin: 0 5px 0 12px;
+  color: green;
+  cursor: pointer;
+  position: absolute;
+  right: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.task-container .fa-square-check:hover {
+  opacity: 0.8;
+}
+
+.task-container .fa-trash {
+  color: #b61313;
+  cursor: pointer;
+  position: absolute;
+  right: 95px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.task-container .fa-trash:hover {
+  opacity: 0.8;
+}
+
+.task-container .edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14px;
+  height: 25px;
+  width: 60px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 16px;
+  color: #010130;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.task-container .edit:hover {
+  opacity: 0.8;
+}
+
+/* .task-container #edit:active {
+  transform: translateY(1px);
+} */
+
+#form .checked .fa-square-check {
+  color: gray;
+}
+
+#form .checked .new-task {
+  color: gray;
+  text-decoration: line-through;
+}
